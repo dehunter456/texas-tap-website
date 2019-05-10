@@ -1,3 +1,3 @@
 # The Texas Tap Website
 
-Hey.
+A website for the new UT Austin student org.
