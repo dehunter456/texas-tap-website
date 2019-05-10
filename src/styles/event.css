@@ -1,0 +1,98 @@
+/* --- Styling for the Event component --- */
+
+a.event {
+	/* For overriding default anchor tag styling */
+	color: #333;
+	text-decoration: none;
+}
+
+.event {
+	display: block;
+	padding: 1em;
+}
+
+.event__title {
+	display: block;
+	font-weight: 600;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.event__time {
+	display: block;
+	text-align: center;
+}
+
+.event__day, .event__time-range {
+	display: inline-block;
+	font-size: .75em;
+	color: #666;
+}
+
+.event__day::after {
+	content: " | ";
+}
+
+a.event:hover .event__title, a.event:hover .event__day, a.event:hover .event__time-range {
+	color: #AD87FF;
+	transition: .25s ease;
+}
+
+a.event:active .event__title, a.event:active .event__day, a.event:active .event__time-range {
+	color: #7F53DC;
+}
+
+@media screen and (min-width: 768px) {
+/* --- Non-mobile styles --- */
+
+.event {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: .25em;
+}
+
+.event__title {
+	flex: 4 auto;
+	text-align: left;
+}
+
+.event__time {
+	flex: 1 auto;
+	text-align: right;
+}
+
+.event__day {
+	display: block;
+	font-size: 1.25em;
+	color: #333;
+	padding: 0 0 .75em 0;
+}
+
+.event__time-range {
+	display: block;
+}
+
+.event__day::after {
+	content: "";
+}
+
+}
+
+/* --- EventList styles --- */
+.schedule {
+	display: block;
+	width: 90%;
+	text-align: center;
+	margin: auto;
+}
+
+.events {
+	margin: 1em auto;
+}
+
+@media screen and (min-width: 768px) {
+	.schedule {
+		width: 48em;
+	}
+}

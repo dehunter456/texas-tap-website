@@ -1,0 +1,57 @@
+/* --- Styling for the button component. --- */
+
+a {
+	text-decoration: none;
+}
+
+.button {
+	display: block;
+	padding: .75em;
+	letter-spacing: .05em;
+	border-style: solid;
+	border-width: .125em;
+	text-align: center;
+}
+
+a.button.--normal, a.button.--normal:visited {
+	color: #333;
+	border-color: #333;
+}
+
+a.button.--inverted, a.button.--inverted:visited {
+	color: #eee;
+	border-color: #eee;
+}
+
+a.button.--normal:hover {
+	border-color: #7F53DC;
+	color: #7F53DC;
+	transition: .25s ease;
+}
+
+a.button.--inverted:hover {
+	border-color: #fff;
+	color: #fff;
+	transition: .25s ease;
+}
+
+a.button.--normal:active {
+	border-color: #7F53DC;
+	background: #7F53DC;
+	color: #fff;
+	transition: .25s ease;
+}
+
+a.button.--inverted:active {
+	border-color: #fff;
+	background: #fff;
+	color: #7F53DC;
+	transition: .25s ease;
+}
+
+@media screen and (min-width: 768px) {
+	.button {
+		display: inline-block;
+		margin: auto;
+	}
+}
