@@ -35,7 +35,7 @@ a.event {
 
 a.event:hover .event__title, a.event:hover .event__day, a.event:hover .event__time-range {
 	color: #AD87FF;
-	transition: .25s ease;
+	transition: .25s ease-in;
 }
 
 a.event:active .event__title, a.event:active .event__day, a.event:active .event__time-range {
@@ -49,6 +49,7 @@ a.event:active .event__title, a.event:active .event__day, a.event:active .event_
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
 	margin: .25em;
 }
 
@@ -80,6 +81,7 @@ a.event:active .event__title, a.event:active .event__day, a.event:active .event_
 }
 
 /* --- EventList styles --- */
+
 .schedule {
 	display: block;
 	width: 90%;
@@ -92,7 +94,10 @@ a.event:active .event__title, a.event:active .event__day, a.event:active .event_
 }
 
 @media screen and (min-width: 768px) {
-	.schedule {
-		width: 48em;
-	}
+/* --- Non-mobile styles --- */
+
+.schedule {
+	width: 48em;
+}
+
 }

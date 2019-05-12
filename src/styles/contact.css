@@ -1,0 +1,72 @@
+/* --- Contact Section Styles --- */
+
+.contact {
+	display: block;
+	margin: auto;
+	width: 90%;
+	text-align: center;
+}
+
+.contact__anchor-tag {
+	font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+
+.contact {
+	width: 768px;
+}
+
+}
+
+/* --- Social Icon --- */
+
+.icon-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+a.social-icon, a.social-icon:visited {
+	color: #ddd;
+}
+
+.social-icon {
+	flex: auto;
+	margin: 1.5em;
+}
+
+.social-icon__img {
+	display: block;
+	text-align: center;
+	font-size: 2.5em;
+	margin: auto;
+	display: block;
+}
+
+.social-icon__label {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+a.social-icon {
+	cursor: pointer;
+}
+
+a.social-icon:hover {
+	color: #ffd787;
+	transition: .25s ease-in;
+}
+
+a.social-icon:active {
+	color: #e6b34c;
+}
+
+.social-icon__label {
+	font-size: .75em;
+	text-align: center;
+	display: block;
+}
+
+}

@@ -1,0 +1,36 @@
+/* --- About Section Styles --- */
+
+.about {
+	width: 90%;
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	align-content: center;
+}
+
+.about__content-con {
+	padding: 1em;
+	text-align: center;
+}
+
+.about__img {
+	max-width: 100%;
+	margin-right: 2em;
+	display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+
+	.about {
+		width: 768px;
+		flex-direction: row;
+	}
+
+	.about__content-con--ralign, .about__content-con--ralign h3 {
+		text-align: right;
+	}
+	
+	.about__content-con--lalign, .about__content-con--lalign h3 {
+		text-align: left;
+	}
+}

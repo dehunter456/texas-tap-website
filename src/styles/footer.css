@@ -1,0 +1,22 @@
+/* --- Footer styles --- */
+
+.footer {
+	width: 100%;
+	text-align: center;
+	background: #7F53DC;
+	padding: 1em 0;
+	letter-spacing: .0625em;
+}
+
+.footer__primary-txt {
+	font-size: 1em;
+	font-weight: 700;
+	color: #fff;
+	margin: .25em auto .5em;
+}
+
+.footer__secondary-txt {
+	font-size: .75em;
+	font-weight: 400;
+	color: #ddd;
+}

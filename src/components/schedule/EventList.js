@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Button from './Button.js';
+import Button from '../misc/Button.js';
 import Event from './Event.js';
-import '../styles/event.css';
+import '../../styles/event.css';
 
 // Wrapper ES6 object to hold event data
 class EventObject {
@@ -18,27 +18,24 @@ class EventList extends Component {
 
 	constructor (props) {
 		super(props);
-		this.state = {
-			events: []
-		};
+		this.state = { events: [] };
 		this.getEvents().then((eventList) => {
 			this.setState({events: eventList});
 		});
 	}
 
-	// Make API call to get the most recent events and update the state of the list
+	// Make API call to get the most recent events and return them in a promise
 	async getEvents () {
 		let newEvents = []
 		newEvents.push(new EventObject("Playing Minecraft", "April 20, 2019", "5:00 PM", "8:00PM", "#"));
 		newEvents.push(new EventObject("Driving Chris Golubski's Teslas", "May 5, 2019", "2:00 PM", "3:00PM", "#"));
 		newEvents.push(new EventObject("Failing CS429", "May 10, 2019", "5:00 AM", "8:00AM", "#"));
-		console.log(newEvents);
 		return newEvents
 	}
 
 	render () {
-		const events = this.state.events.map((event) => {
-			return <Event title={event.title} day={event.day} start={event.start} end={event.end} link={event.link} />
+		const events = this.state.events.map((event, i) => {
+			return <Event title={event.title} day={event.day} start={event.start} end={event.end} link={event.link} key={i} />
 		});
 		return (
 			<div className="schedule">

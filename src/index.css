@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -16,6 +20,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	margin: .75em auto;
 	font-weight: 700;
+	letter-spacing: .0625em;
+	text-align: center;
 }
 
 h1.--normal, h2.--normal, h3.--normal, h4.--normal, h5.--normal, h6.--normal {
@@ -27,3 +33,53 @@ h1.--inverted, h2.--inverted, h3.--inverted, h4.--inverted, h5.--inverted, h6.--
 }
 
 h1 { font-size: 3em; } h2 { font-size: 2.5em; } h3 { font-size: 2em; } h4 {font-size: 1.75em;} h5 { font-size: 1.5em; } h6 { font-size: 1.25em; }
+
+p {
+	font-size: 1em;
+	line-height: 150%;
+}
+
+p.--normal {
+	color: #555;
+}
+
+p.--inverted {
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+a.--normal, a.--normal:visited {
+	color: #ad87ff;
+}
+
+a.--inverted, a.--inverted:visited {
+	color: #ffd787;
+}
+
+a.--normal:hover, a.--normal:active {
+	color: #7F53DC;
+}
+a.--inverted:hover, a.--inverted:active {
+	color: #e6b34c;
+}
+
+a.--normal:hover, a.--inverted:hover {
+	transition: color .25s ease-in;
+}
+
+.section {
+	width: 100%;
+	padding: 2em 0;
+	display: block;
+}
+
+.section--white {
+	background: #fff;
+}
+
+.section--purple {
+	background: #AD87FF;
+}
