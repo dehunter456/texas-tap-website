@@ -1,3 +1,3 @@
 # The Texas Tap Website
 
-A website for the new UT Austin student org.
+A simple React.js website for the new UT Austin student org.
