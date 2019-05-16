@@ -1,0 +1,3 @@
+Format for putting events – "Name; Day; Start Time; End Time; Event Link" (remember to separate with a "; " and include the space!)
+Texas Tap Example Meeting; May 15, 2019; 5:00 PM; 7:00 PM; https://calendar.google.com/event?action=TEMPLATE&tmeid=M3BjbW5oNjBvYzlrbnZlZTYyaWhhZTRibDcgNmNkdXJpdjg2c2pscWZhM2RwbmxyZjc1ZzBAZw&tmsrc=6cduriv86sjlqfa3dpnlrf75g0%40group.calendar.google.com
+An example tap event; May 18, 2019; 5:00 PM; 6:00 PM; https://calendar.google.com/event?action=TEMPLATE&tmeid=NmZxZ2o4ajM2bzUyZHA0b21hZm12cXFmZ2kgNmNkdXJpdjg2c2pscWZhM2RwbmxyZjc1ZzBAZw&tmsrc=6cduriv86sjlqfa3dpnlrf75g0%40group.calendar.google.com
